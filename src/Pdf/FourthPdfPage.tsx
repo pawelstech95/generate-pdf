@@ -5,7 +5,7 @@ import { globalStyles, stylesForFourthPage } from "./stylesForPdfComponents";
 const FourthPdfPage = () => {
   return (
     <>
-      <View fixed={true}>
+      <View>
         <Svg style={globalStyles.backgroundSecondaryColor} />
         <Text
           style={[

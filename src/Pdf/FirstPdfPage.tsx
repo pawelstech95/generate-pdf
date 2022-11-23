@@ -6,7 +6,7 @@ import { Image, View, Text } from "@react-pdf/renderer";
 export const FirstPdfPage = () => {
   return (
     <>
-      <View fixed={true}>
+      <View>
         <Image
           style={globalStyles.pageBackgroundFullSize}
           // used from -> https://pixabay.com/photos/boat-dock-ocean-white-morning-7588340/

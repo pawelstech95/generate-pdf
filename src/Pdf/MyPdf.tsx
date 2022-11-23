@@ -12,15 +12,19 @@ const MyPdf = () => {
           <FirstPdfPage />
         </Page>
         <Page size="A4" orientation="landscape">
-          {/* Page 3 */}
-          <Agenda />
+          {/* Section 0 / Page 2 */}
+          <Agenda section={0} />
         </Page>
         <Page size="A4" orientation="landscape">
-          {/* Page 4 */}
-          <Agenda />
+          {/* Section 1 / Page 3 */}
+          <Agenda section={1} />
         </Page>
         <Page size="A4" orientation="landscape">
           <FourthPdfPage />
+        </Page>
+        <Page size="A4" orientation="landscape">
+          {/* Section 2 / Page @todo */}
+          <Agenda section={2} />
         </Page>
       </Document>
     </PDFViewer>

@@ -179,4 +179,5 @@ export const stylesForFourthPage = StyleSheet.create({
     width: "35%",
     fontSize: "12px",
   },
+  dynamicColor: {},
 });

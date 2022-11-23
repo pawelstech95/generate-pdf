@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Image, Text, View } from "@react-pdf/renderer";
 import { globalStyles, stylesForAgendaPage } from "./stylesForPdfComponents";
 
-const Agenda = () => {
-  const [page, setPage] = useState(0);
+interface Props {
+  section: 0 | 1 | 2 | 3 | 4;
+}
+
+const Agenda = ({ section }: Props) => {
+  console.log(section);
+  //@todo use switch / case
   return (
     <>
-      <View fixed={true}>
+      <View>
         <Image
           style={globalStyles.pageBackgroundHalfSize}
           // used from -> https://pixabay.com/photos/boat-dock-ocean-white-morning-7588340/
@@ -18,7 +23,11 @@ const Agenda = () => {
             stylesForAgendaPage.positionFirstText,
           ]}
         >
-          1. Introduction
+          {section === 1 ? (
+            <Text style={{ color: "red" }}>1. Introduction</Text>
+          ) : (
+            <Text>1. Introduction</Text>
+          )}
         </Text>
         <Text
           style={[
@@ -26,7 +35,11 @@ const Agenda = () => {
             stylesForAgendaPage.positionSecondText,
           ]}
         >
-          2. Economic impact
+          {section === 2 ? (
+            <Text style={{ color: "red" }}>2. Economic impact</Text>
+          ) : (
+            <Text>2. Economic impact</Text>
+          )}
         </Text>
         <Text
           style={[
@@ -34,7 +47,11 @@ const Agenda = () => {
             stylesForAgendaPage.positionThirdText,
           ]}
         >
-          3. ESG data
+          {section === 3 ? (
+            <Text style={{ color: "red" }}>3. ESG data</Text>
+          ) : (
+            <Text>3. ESG data</Text>
+          )}
         </Text>
         <Text
           style={[
@@ -42,7 +59,11 @@ const Agenda = () => {
             stylesForAgendaPage.positionFourthText,
           ]}
         >
-          4. Annex: Methodology
+          {section === 4 ? (
+            <Text style={{ color: "red" }}>4. Annex: Methodology</Text>
+          ) : (
+            <Text> 4. Annex: Methodology</Text>
+          )}
         </Text>
       </View>
     </>
