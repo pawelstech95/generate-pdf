@@ -1,7 +1,8 @@
 import React from "react";
 import { Page, PDFViewer, Document } from "@react-pdf/renderer";
 import { FirstPdfPage } from "./FirstPdfPage";
-import SecondPdfPage from "./SecondPdfPage";
+import Agenda from "./Agenda";
+import FourthPdfPage from "./FourthPdfPage";
 
 const MyPdf = () => {
   return (
@@ -11,7 +12,15 @@ const MyPdf = () => {
           <FirstPdfPage />
         </Page>
         <Page size="A4" orientation="landscape">
-          <SecondPdfPage />
+          {/* Page 3 */}
+          <Agenda />
+        </Page>
+        <Page size="A4" orientation="landscape">
+          {/* Page 4 */}
+          <Agenda />
+        </Page>
+        <Page size="A4" orientation="landscape">
+          <FourthPdfPage />
         </Page>
       </Document>
     </PDFViewer>

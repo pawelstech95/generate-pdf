@@ -10,35 +10,54 @@ import { StyleSheet } from "@react-pdf/renderer";
 //   fonts: [],
 // });
 
-export const globalStyles = StyleSheet.create({});
-
-export const stylesForFirstPage = StyleSheet.create({
-  // global
-  pageBackground: {
+export const globalStyles = StyleSheet.create({
+  pageBackgroundFullSize: {
     position: "relative",
-    minWidth: "100%",
-    minHeight: "100%",
-    // display: 'block',
-    height: "100%",
     width: "100%",
+    height: "100%",
+  },
+  pageBackgroundHalfSize: {
+    position: "relative",
+    backgroundSize: "cover",
+    width: "50%",
+    height: "100%",
   },
   brandPrimaryColor: {
-    color: "orange",
+    color: "rgba(248,187,118,0.53)",
   },
   brandSecondaryColor: {
-    color: "blue",
+    color: "rgba(29, 121, 161, 0.53)",
+  },
+  brandThirdColor: {
+    color: "rgba(226,23,94,0.53)",
+  },
+  brandFourthColor: {
+    color: "rgb(255,255,255)",
+  },
+  blackColor: {
+    color: "rgb(7,7,7)",
+  },
+  backgroundSecondaryColor: {
+    position: "relative", // ?
+    backgroundColor: "rgba(29, 121, 161, 0.53)",
+    width: "50%",
+    height: "100%",
+  },
+  logoBrand: {
+    fontFamily: "Times-Bold",
+    fontSize: "36px",
   },
   section: {
     margin: 10,
     padding: 10,
     flexGrow: 1,
   },
-
-  // logo first page
-  logoBrand: {
+  boldFontSize: {
     fontFamily: "Times-Bold",
-    fontSize: "36px",
   },
+});
+
+export const stylesForFirstPage = StyleSheet.create({
   firstPageLogo: {
     position: "absolute",
     right: "30px",
@@ -87,77 +106,77 @@ export const stylesForFirstPage = StyleSheet.create({
   },
 });
 
-export const stylesForSecondPage = StyleSheet.create({
-  // global
-  pageBackground: {
-    position: "relative",
-    minWidth: "100%",
-    minHeight: "100%",
-    // display: 'block',
-    height: "100%",
-    width: "100%",
+export const stylesForAgendaPage = StyleSheet.create({
+  positionFirstText: {
+    position: "absolute",
+    left: "65%",
+    top: "30%",
   },
-  brandPrimaryColor: {
-    color: "orange",
+  positionSecondText: {
+    position: "absolute",
+    left: "65%",
+    top: "40%",
   },
-  brandSecondaryColor: {
-    color: "blue",
+  positionThirdText: {
+    position: "absolute",
+    left: "65%",
+    top: "50%",
   },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
+  positionFourthText: {
+    position: "absolute",
+    left: "65%",
+    top: "60%",
   },
+});
 
-  // logo first page
-  logoBrand: {
-    fontFamily: "Times-Bold",
-    fontSize: "36px",
-  },
-  firstPageLogo: {
-    position: "absolute",
-    right: "30px",
-    top: "30px",
-    color: "red",
-  },
-  firstPageMainText: {
-    position: "absolute",
-    width: "300px",
-    left: "30%",
-    top: "35%",
-    fontSize: "42px",
-  },
-  firstPageSecondaryText: {
-    position: "absolute",
-    width: "150px",
-    left: "30%",
-    top: "55%",
-    fontSize: "24px",
-  },
-  firstPageFooterLeft: {
+export const stylesForFourthPage = StyleSheet.create({
+  positionFirstText: {
     position: "absolute",
     left: "10%",
-    bottom: "5%",
-    fontSize: "12px",
-    color: "white",
+    top: "30%",
+    width: "30%",
+    fontSize: "32px",
   },
-  firstPageFooterRight: {
+  positionSecondText: {
     position: "absolute",
-    right: "5%",
-    bottom: "5%",
-    fontSize: "12px",
-    color: "white",
+    left: "55%",
+    top: "10%",
+    fontSize: "32px",
   },
-  firstPageBrandSidebar: {
+  positionThirdText: {
     position: "absolute",
-    bottom: "50%",
-    right: "47.5%",
-    paddingTop: "2%",
-    paddingLeft: "15%",
-    width: "100%",
-    height: "8%",
-    color: "white",
-    backgroundColor: "orange",
-    transform: "rotate(-90deg)",
+    left: "55%",
+    top: "25%",
+    width: "40%",
+    fontSize: "16px",
+  },
+  positionFourthText: {
+    position: "absolute",
+    left: "55%",
+    top: "40%",
+    width: "40%",
+    fontSize: "16px",
+  },
+  positionFifthText: {
+    position: "absolute",
+    left: "55%",
+    top: "60%",
+    width: "40%",
+    fontSize: "16px",
+  },
+  positionSixthText: {
+    position: "absolute",
+    left: "57%",
+    top: "75%",
+    width: "35%",
+    fontSize: "12px",
+  },
+
+  positionSeventhText: {
+    position: "absolute",
+    left: "57%",
+    top: "80%",
+    width: "35%",
+    fontSize: "12px",
   },
 });

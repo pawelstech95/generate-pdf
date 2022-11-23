@@ -1,6 +1,6 @@
 import React from "react";
 
-import { stylesForFirstPage } from "./stylesForPdfComponents";
+import { globalStyles, stylesForFirstPage } from "./stylesForPdfComponents";
 import { Image, View, Text } from "@react-pdf/renderer";
 
 export const FirstPdfPage = () => {
@@ -8,21 +8,18 @@ export const FirstPdfPage = () => {
     <>
       <View fixed={true}>
         <Image
-          style={stylesForFirstPage.pageBackground}
+          style={globalStyles.pageBackgroundFullSize}
           // used from -> https://pixabay.com/photos/boat-dock-ocean-white-morning-7588340/
           src="https://cdn.pixabay.com/photo/2022/11/13/05/45/boat-7588340_1280.jpg"
         />
         <Text
-          style={[
-            stylesForFirstPage.logoBrand,
-            stylesForFirstPage.firstPageLogo,
-          ]}
+          style={[globalStyles.logoBrand, stylesForFirstPage.firstPageLogo]}
         >
           Some Company
         </Text>
         <Text
           style={[
-            stylesForFirstPage.brandPrimaryColor,
+            globalStyles.brandPrimaryColor,
             stylesForFirstPage.firstPageMainText,
           ]}
         >
@@ -30,7 +27,7 @@ export const FirstPdfPage = () => {
         </Text>
         <Text
           style={[
-            stylesForFirstPage.brandSecondaryColor,
+            globalStyles.brandSecondaryColor,
             stylesForFirstPage.firstPageSecondaryText,
           ]}
         >
