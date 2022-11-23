@@ -1,51 +1,52 @@
 import React from "react";
+import { Image, Text, View } from "@react-pdf/renderer";
+import { stylesForSecondPage } from "./stylesForPdfComponents";
 
-import { stylesForFirstPage } from "./stylesForPdfComponents";
-import { Image, View, Text } from "@react-pdf/renderer";
-
-export const FirstPdfPage = () => {
+const SecondPdfPage = () => {
   return (
     <>
       <View fixed={true}>
         <Image
-          style={stylesForFirstPage.pageBackground}
+          style={stylesForSecondPage.pageBackground}
           // used from -> https://pixabay.com/photos/boat-dock-ocean-white-morning-7588340/
           src="https://cdn.pixabay.com/photo/2022/11/13/05/45/boat-7588340_1280.jpg"
         />
         <Text
           style={[
-            stylesForFirstPage.logoBrand,
-            stylesForFirstPage.firstPageLogo,
+            stylesForSecondPage.logoBrand,
+            stylesForSecondPage.firstPageLogo,
           ]}
         >
           Some Company
         </Text>
         <Text
           style={[
-            stylesForFirstPage.brandPrimaryColor,
-            stylesForFirstPage.firstPageMainText,
+            stylesForSecondPage.brandPrimaryColor,
+            stylesForSecondPage.firstPageMainText,
           ]}
         >
           A subcontractor of a company...
         </Text>
         <Text
           style={[
-            stylesForFirstPage.brandSecondaryColor,
-            stylesForFirstPage.firstPageSecondaryText,
+            stylesForSecondPage.brandSecondaryColor,
+            stylesForSecondPage.firstPageSecondaryText,
           ]}
         >
           Draft report
         </Text>
-        <Text style={stylesForFirstPage.firstPageFooterLeft}>
+        <Text style={stylesForSecondPage.firstPageFooterLeft}>
           4 oktober 2022
         </Text>
-        <Text style={stylesForFirstPage.firstPageFooterRight}>
+        <Text style={stylesForSecondPage.firstPageFooterRight}>
           Some Company ©
         </Text>
-        <Text style={stylesForFirstPage.firstPageBrandSidebar}>
+        <Text style={stylesForSecondPage.firstPageBrandSidebar}>
           Some text in Sidebar
         </Text>
       </View>
     </>
   );
 };
+
+export default SecondPdfPage;
