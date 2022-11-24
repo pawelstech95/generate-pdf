@@ -12,9 +12,12 @@
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "@react-pdf/renderer": "^3.0.1",
+    "chart.js": "^4.0.1",
+    "chartjs-plugin-datalabels": "^2.1.0",
     "eslint": "^8.28.0",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.0.1",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

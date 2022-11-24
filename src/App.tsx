@@ -4,10 +4,13 @@ import { DownloadPdf } from "./Pdf/DownloadPdf";
 import MyPdf from "./Pdf/MyPdf";
 
 import "./App.css";
+import BarChart from "./components/BarChart";
 
 function App() {
   return (
     <div className="App">
+      <h1>Bar chart</h1>
+      <BarChart />
       <h1>Download PDF</h1>
       <DownloadPdf />
       <h1>Generate PDF</h1>
