@@ -1,8 +1,11 @@
 import React from "react";
 import { Text, View, Svg } from "@react-pdf/renderer";
-import { globalStyles, stylesForFourthPage } from "./stylesForPdfComponents";
+import {
+  globalStyles,
+  stylesForIntroductionPage,
+} from "./stylesForPdfComponents";
 
-const FourthPdfPage = () => {
+const IntroductionPage = () => {
   return (
     <>
       <View>
@@ -10,7 +13,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.brandFourthColor,
-            stylesForFourthPage.positionFirstText,
+            stylesForIntroductionPage.positionFirstText,
           ]}
         >
           This study reports on the 2021 impact of the Some Company System in
@@ -19,7 +22,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.brandSecondaryColor,
-            stylesForFourthPage.positionSecondText,
+            stylesForIntroductionPage.positionSecondText,
           ]}
         >
           Introduction
@@ -27,7 +30,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.blackColor,
-            stylesForFourthPage.positionThirdText,
+            stylesForIntroductionPage.positionThirdText,
           ]}
         >
           <Text style={globalStyles.boldFontSize}>Lorem Ipsum </Text>
@@ -40,7 +43,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.blackColor,
-            stylesForFourthPage.positionFourthText,
+            stylesForIntroductionPage.positionFourthText,
           ]}
         >
           <Text style={globalStyles.boldFontSize}>Lorem Ipsum </Text>
@@ -52,7 +55,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.blackColor,
-            stylesForFourthPage.positionFifthText,
+            stylesForIntroductionPage.positionFifthText,
           ]}
         >
           <Text style={globalStyles.boldFontSize}>Lorem Ipsum </Text>
@@ -62,7 +65,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.blackColor,
-            stylesForFourthPage.positionSixthText,
+            stylesForIntroductionPage.positionSixthText,
           ]}
         >
           <Text style={{ color: "rgba(226,23,94,0.53)" }}>•</Text> This book is
@@ -72,7 +75,7 @@ const FourthPdfPage = () => {
         <Text
           style={[
             globalStyles.blackColor,
-            stylesForFourthPage.positionSeventhText,
+            stylesForIntroductionPage.positionSeventhText,
           ]}
         >
           <Text style={{ color: "rgba(226,23,94,0.53)" }}>•</Text> The first
@@ -84,4 +87,4 @@ const FourthPdfPage = () => {
   );
 };
 
-export default FourthPdfPage;
+export default IntroductionPage;

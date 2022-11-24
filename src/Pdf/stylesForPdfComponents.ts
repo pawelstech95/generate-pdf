@@ -57,42 +57,42 @@ export const globalStyles = StyleSheet.create({
   },
 });
 
-export const stylesForFirstPage = StyleSheet.create({
-  firstPageLogo: {
+export const stylesForWelcomePage = StyleSheet.create({
+  welcomePageLogo: {
     position: "absolute",
     right: "30px",
     top: "30px",
     color: "red",
   },
-  firstPageMainText: {
+  welcomePageMainText: {
     position: "absolute",
     width: "300px",
     left: "30%",
     top: "35%",
     fontSize: "42px",
   },
-  firstPageSecondaryText: {
+  welcomePageSecondaryText: {
     position: "absolute",
     width: "150px",
     left: "30%",
     top: "55%",
     fontSize: "24px",
   },
-  firstPageFooterLeft: {
+  welcomePageFooterLeft: {
     position: "absolute",
     left: "10%",
     bottom: "5%",
     fontSize: "12px",
     color: "white",
   },
-  firstPageFooterRight: {
+  welcomePageFooterRight: {
     position: "absolute",
     right: "5%",
     bottom: "5%",
     fontSize: "12px",
     color: "white",
   },
-  firstPageBrandSidebar: {
+  welcomePageBrandSidebar: {
     position: "absolute",
     bottom: "50%",
     right: "47.5%",
@@ -129,7 +129,7 @@ export const stylesForAgendaPage = StyleSheet.create({
   },
 });
 
-export const stylesForFourthPage = StyleSheet.create({
+export const stylesForIntroductionPage = StyleSheet.create({
   positionFirstText: {
     position: "absolute",
     left: "10%",
