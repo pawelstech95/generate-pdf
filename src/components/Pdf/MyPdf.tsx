@@ -1,9 +1,26 @@
-import React from "react";
-import { Page, PDFViewer, Document, Canvas, View } from "@react-pdf/renderer";
+import React, { useCallback } from "react";
+import { Page, PDFViewer, Document, View, Image } from "@react-pdf/renderer";
 
 import { WelcomePage } from "./WelcomePage";
 import Agenda from "./Agenda";
 import IntroductionPage from "./IntroductionPage";
+
+const Test = () => {
+  const test = useCallback(() => {
+    const canvas = document.getElementById(
+      "canvasBarChart"
+    ) as HTMLCanvasElement;
+    // const context = canvas.getContext("2d");
+
+    return canvas.toDataURL("image/jpeg", 1.0);
+  }, []);
+
+  return (
+    <View>
+      <Image src={test} />
+    </View>
+  );
+};
 
 export const MyDoc = (
   <Document>
@@ -26,18 +43,7 @@ export const MyDoc = (
       <Agenda section={2} />
     </Page>
     <Page size="A4" orientation="landscape">
-      <View>
-        <Canvas
-          paint={(painter) => {
-            // console.log("painter", painter);
-            return painter
-              .moveTo(100, 150)
-              .lineTo(100, 250)
-              .lineTo(200, 250)
-              .fill("#FF3300");
-          }}
-        />
-      </View>
+      <Test />
     </Page>
   </Document>
 );

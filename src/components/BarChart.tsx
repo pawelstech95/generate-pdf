@@ -93,7 +93,7 @@ const options = {
   },
 };
 
-const BarChart = () => (
+export const BarChart = () => (
   <>
     <div
       style={{
@@ -107,5 +107,3 @@ const BarChart = () => (
     </div>
   </>
 );
-
-export default BarChart;
