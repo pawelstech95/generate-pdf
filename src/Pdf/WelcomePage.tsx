@@ -1,6 +1,9 @@
 import React from "react";
 
-import { globalStyles, stylesForWelcomePage } from "./stylesForPdfComponents";
+import {
+  globalStyles,
+  stylesForWelcomePage,
+} from "../utils/stylesForPdfComponents";
 import { Image, View, Text } from "@react-pdf/renderer";
 
 export const WelcomePage = () => {
