@@ -1,5 +1,5 @@
 import React from "react";
-import { Page, PDFViewer, Document } from "@react-pdf/renderer";
+import { Page, PDFViewer, Document, Canvas, View } from "@react-pdf/renderer";
 
 import { WelcomePage } from "./WelcomePage";
 import Agenda from "./Agenda";
@@ -24,6 +24,20 @@ export const MyDoc = (
     <Page size="A4" orientation="landscape">
       {/* Section 2 / Page @todo */}
       <Agenda section={2} />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      <View>
+        <Canvas
+          paint={(painter) => {
+            // console.log("painter", painter);
+            return painter
+              .moveTo(100, 150)
+              .lineTo(100, 250)
+              .lineTo(200, 250)
+              .fill("#FF3300");
+          }}
+        />
+      </View>
     </Page>
   </Document>
 );

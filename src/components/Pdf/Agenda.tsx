@@ -3,7 +3,7 @@ import { Image, Text, View } from "@react-pdf/renderer";
 import {
   globalStyles,
   stylesForAgendaPage,
-} from "../utils/stylesForPdfComponents";
+} from "../../utils/stylesForPdfComponents";
 
 interface Props {
   section: 0 | 1 | 2 | 3 | 4;

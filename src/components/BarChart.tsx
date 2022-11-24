@@ -103,7 +103,7 @@ const BarChart = () => (
       }}
     >
       {/*@ts-ignore*/}
-      <Bar data={data} options={options} />
+      <Bar id="canvasBarChart" data={data} options={options} />
     </div>
   </>
 );

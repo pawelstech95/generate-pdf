@@ -3,7 +3,7 @@ import { Text, View, Svg } from "@react-pdf/renderer";
 import {
   globalStyles,
   stylesForIntroductionPage,
-} from "../utils/stylesForPdfComponents";
+} from "../../utils/stylesForPdfComponents";
 
 const IntroductionPage = () => {
   return (
