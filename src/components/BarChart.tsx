@@ -93,17 +93,9 @@ const options = {
   },
 };
 
+{
+}
 export const BarChart = () => (
-  <>
-    <div
-      style={{
-        height: "500px",
-        width: "1000px",
-        margin: "0 auto",
-      }}
-    >
-      {/*@ts-ignore*/}
-      <Bar id="canvasBarChart" data={data} options={options} />
-    </div>
-  </>
+  /*@ts-ignore*/
+  <Bar id="canvasBarChart" data={data} options={options} />
 );

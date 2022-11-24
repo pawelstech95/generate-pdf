@@ -10,7 +10,15 @@ function App() {
   return (
     <div className="App">
       <h1>Bar chart</h1>
-      <BarChart />
+      <div
+        style={{
+          height: "500px",
+          width: "1000px",
+          margin: "0 auto",
+        }} // @todo to remove?
+      >
+        <BarChart />
+      </div>
 
       <h1>Download PDF</h1>
       <DownloadPdf />
