@@ -7,7 +7,6 @@ interface Props {
 }
 
 const Agenda = ({ section }: Props) => {
-  console.log(section);
   //@todo use switch / case
   return (
     <>
