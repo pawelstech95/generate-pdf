@@ -179,5 +179,4 @@ export const stylesForIntroductionPage = StyleSheet.create({
     width: "35%",
     fontSize: "12px",
   },
-  dynamicColor: {},
 });

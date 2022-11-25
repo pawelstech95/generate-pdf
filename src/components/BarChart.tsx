@@ -8,18 +8,18 @@ Chart.register(ChartDataLabels);
 
 // origin source https://codesandbox.io/s/bar-chart-react-sample-iw9q3?file=/src/App.js
 
-const data = {
+export const data = {
   labels: [
-    ["Sprint", "11"],
-    ["Sprint", "12"],
-    ["Sprint", "13"],
-    ["Sprint", "14"],
-    ["Sprint 15", "(Latest)"],
+    ["Example", "1"],
+    ["Example", "2"],
+    ["Example", "3"],
+    ["Example", "4"],
+    ["Example 5", "(Latest)"],
   ],
   datasets: [
     {
       categoryPercentage: 1,
-      label: "Sprint Velocity",
+      label: "Example Lorem Ipsum",
       data: [65, 59, 80, 81, 56],
       backgroundColor: [
         "rgba(99, 99, 234, 1)",
@@ -56,7 +56,7 @@ const options = {
     },
     title: {
       display: false,
-      text: "Sprint Velocity",
+      text: "Example Lorem Ipsum",
       padding: {
         bottom: 20,
       },
@@ -96,6 +96,10 @@ const options = {
 {
 }
 export const BarChart = () => (
-  /*@ts-ignore*/
-  <Bar id="canvasBarChart" data={data} options={options} />
+  <Bar
+    id="canvasBarChart"
+    data={data}
+    // @ts-ignore
+    options={options}
+  />
 );
