@@ -4,7 +4,8 @@ import { Page, PDFViewer, Document } from "@react-pdf/renderer";
 import { WelcomePage } from "./WelcomePage";
 import Agenda from "./Agenda";
 import IntroductionPage from "./IntroductionPage";
-import BarChartPage from "./BarChartPage";
+import { BarChartPage } from "./BarChartPage";
+import { BarGraphsHorizontal } from "./BarGraphsHorizontal";
 
 export const MyDoc = (
   <Document>
@@ -28,6 +29,9 @@ export const MyDoc = (
     </Page>
     <Page size="A4" orientation="landscape">
       <BarChartPage />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      <BarGraphsHorizontal />
     </Page>
   </Document>
 );

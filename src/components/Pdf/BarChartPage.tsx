@@ -3,7 +3,9 @@ import { Image, View, Text } from "@react-pdf/renderer";
 import { globalStyles } from "../../utils/stylesForPdfComponents";
 import { data } from "../BarChart";
 
-const BarChartPage = () => {
+// @todo this whole component needs a rewrite
+
+export const BarChartPage = () => {
   const canvasConverter = useCallback(() => {
     const canvas = document.getElementById(
       "canvasBarChart"
@@ -30,11 +32,24 @@ const BarChartPage = () => {
   });
 
   return (
-    <View fixed={true}>
-      <Image src={canvasConverter} />
-      {printStatistic}
+    <View
+      fixed={true}
+      style={{ position: "relative", backgroundColor: "black" }}
+    >
+      <Image
+        src={canvasConverter}
+        style={{ width: "75%", height: "50%", margin: "10% auto" }}
+      />
+      <View
+        style={{
+          width: "50%",
+          height: "50%",
+          marginLeft: "5%",
+          marginBottom: "5%",
+        }}
+      >
+        {printStatistic}
+      </View>
     </View>
   );
 };
-
-export default BarChartPage;
