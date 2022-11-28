@@ -5,7 +5,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  
+
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -14,6 +14,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+  /*@todo implement global variables*/
 
   --color-yellow255: rgb(246, 239, 167);
   --color-purple234-1:rgba(99, 99, 234, 1);

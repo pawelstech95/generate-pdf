@@ -37,9 +37,9 @@ const Agenda = ({ section }: Props) => {
         ]}
       >
         {section === 2 ? (
-          <Text style={{ color: "red" }}>2. Economic impact</Text>
+          <Text style={{ color: "red" }}>2. Sample charts</Text>
         ) : (
-          <Text>2. Economic impact</Text>
+          <Text>2. Sample charts</Text>
         )}
       </Text>
       <Text
@@ -49,9 +49,9 @@ const Agenda = ({ section }: Props) => {
         ]}
       >
         {section === 3 ? (
-          <Text style={{ color: "red" }}>3. ESG data</Text>
+          <Text style={{ color: "red" }}>3. Fonts</Text>
         ) : (
-          <Text>3. ESG data</Text>
+          <Text>3. Fonts</Text>
         )}
       </Text>
       <Text
@@ -61,9 +61,9 @@ const Agenda = ({ section }: Props) => {
         ]}
       >
         {section === 4 ? (
-          <Text style={{ color: "red" }}>4. Annex: Methodology</Text>
+          <Text style={{ color: "red" }}>4. Tables and advanced charts</Text>
         ) : (
-          <Text> 4. Annex: Methodology</Text>
+          <Text> 4. Tables and advanced charts</Text>
         )}
       </Text>
     </View>

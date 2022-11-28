@@ -38,7 +38,7 @@ export const BarChartPage = () => {
     >
       <Image
         src={canvasConverter}
-        style={{ width: "75%", height: "50%", margin: "10% auto" }}
+        style={{ width: "55%", height: "50%", margin: "10% auto" }}
       />
       <View
         style={{

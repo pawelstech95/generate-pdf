@@ -6,6 +6,8 @@ import Agenda from "./Agenda";
 import IntroductionPage from "./IntroductionPage";
 import { BarChartPage } from "./BarChartPage";
 import { BarGraphsHorizontal } from "./BarGraphsHorizontal";
+import { PageWithFonts } from "./PageWithFonts";
+import { FooterPage } from "./FooterPage";
 
 export const MyDoc = (
   <Document>
@@ -32,6 +34,21 @@ export const MyDoc = (
     </Page>
     <Page size="A4" orientation="landscape">
       <BarGraphsHorizontal />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      {/* Section 3 */}
+      <Agenda section={3} />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      <PageWithFonts />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      {/* Section 4 */}
+      <Agenda section={4} />
+    </Page>
+    <Page size="A4" orientation="landscape"></Page>
+    <Page size="A4" orientation="landscape">
+      <FooterPage />
     </Page>
   </Document>
 );

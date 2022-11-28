@@ -1,14 +1,53 @@
-import { StyleSheet } from "@react-pdf/renderer";
+import { Font, StyleSheet } from "@react-pdf/renderer";
 // @todo use cssModules
 // @todo css are written in an ugly way to save time
-//
-// Font.register({
-//   family: "Satisfy",
-//   src: "https://fonts.googleapis.com/css2?family=Satisfy&display=swap",
-//   fontStyle: "normal",
-//   fontWeight: "normal",
-//   fonts: [],
-// });
+
+Font.registerEmojiSource({
+  format: "png",
+  url: "https://twemoji.maxcdn.com/2/72x72/",
+});
+
+Font.register({
+  family: "Noto Sans JP",
+  fonts: [
+    {
+      src: "public/NotoSansJP-Black.otf",
+    },
+  ],
+});
+
+Font.register({
+  family: "Satisfy",
+  src: `public/Satisfy-Regular.ttf`,
+});
+
+Font.register({
+  family: "Rubik Distressed",
+  src: `public/RubikDistressed-Regular.ttf`,
+});
+
+Font.register({
+  family: "Nerko One",
+  src: `public/NerkoOne-Regular.ttf`,
+});
+
+Font.register({
+  family: "Ubuntu",
+  fonts: [
+    {
+      src: "https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf",
+    },
+    {
+      src: "https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf",
+      fontWeight: "bold",
+    },
+    {
+      src: "https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf",
+      fontWeight: "normal",
+      fontStyle: "italic",
+    },
+  ],
+});
 
 export const globalStyles = StyleSheet.create({
   pageBackgroundFullSize: {
@@ -23,7 +62,7 @@ export const globalStyles = StyleSheet.create({
     height: "100%",
   },
   brandPrimaryColor: {
-    color: "rgba(248,187,118,0.53)",
+    color: "rgba(243,183,69,0.53)",
   },
   brandSecondaryColor: {
     color: "rgba(29, 121, 161, 0.53)",
@@ -178,5 +217,27 @@ export const stylesForIntroductionPage = StyleSheet.create({
     top: "80%",
     width: "35%",
     fontSize: "12px",
+  },
+});
+
+export const stylesForFooterPage = StyleSheet.create({
+  logoSomeCompany: {
+    position: "absolute",
+    left: "20%",
+    top: "30%",
+    width: "60%",
+    fontSize: "42px",
+  },
+});
+
+export const stylesForPageWitchFonts = StyleSheet.create({
+  containerForEmoji: {
+    height: 200,
+    marginVertical: 20,
+    marginHorizontal: "10%",
+  },
+  textEmoji: {
+    fontSize: 30,
+    textAlign: "center",
   },
 });

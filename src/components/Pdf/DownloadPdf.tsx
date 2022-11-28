@@ -10,7 +10,6 @@ export const DownloadPdf = () => {
   if (instance.error) return <div>Something went wrong: {instance.error}</div>;
 
   return (
-    //  to check "!"
     <a href={instance.url!} download="test.pdf">
       Download
     </a>
