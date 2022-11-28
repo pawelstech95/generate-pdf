@@ -93,13 +93,12 @@ const options = {
   },
 };
 
-{
-}
 export const BarChart = () => (
   <Bar
     id="canvasBarChart"
     data={data}
     // @ts-ignore
     options={options}
+    type="bar"
   />
 );

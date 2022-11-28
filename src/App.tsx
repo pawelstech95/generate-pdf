@@ -15,7 +15,7 @@ function App() {
       <h1>Download PDF</h1>
       <DownloadPdf />
 
-      <h1>Generate PDF</h1>
+      <h1>PDF View</h1>
       <MyPdf />
     </div>
   );

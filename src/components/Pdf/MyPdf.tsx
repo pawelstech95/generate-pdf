@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Page, PDFViewer, Document } from "@react-pdf/renderer";
 
 import { WelcomePage } from "./WelcomePage";
@@ -32,10 +32,24 @@ export const MyDoc = (
   </Document>
 );
 
-const MyPdf = () => (
-  <PDFViewer width="1200px" height="900px">
-    {MyDoc}
-  </PDFViewer>
-); // @todo is that correct?
+const MyPdf = () => {
+  const [showView, setShowView] = useState(false);
+
+  return (
+    <>
+      <button
+        style={{ marginBottom: "50px" }}
+        onClick={() => setShowView(!showView)}
+      >
+        {showView ? "Hide PDF" : "Show PDF"}
+      </button>
+      {showView ? (
+        <PDFViewer width="1200px" height="900px">
+          {MyDoc}
+        </PDFViewer>
+      ) : null}
+    </>
+  );
+};
 
 export default MyPdf;
