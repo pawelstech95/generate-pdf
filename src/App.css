@@ -39,3 +39,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.chartsContainer{
+  max-width: 700px;
+  margin: 0 auto
+}

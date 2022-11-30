@@ -9,6 +9,7 @@ import { BarGraphsHorizontal } from "./BarGraphsHorizontal";
 import { PageWithFonts } from "./PageWithFonts";
 import { FooterPage } from "./FooterPage";
 import { ChartGraphPage } from "./ChartGraphPage";
+import { DownloadPdf } from "./DownloadPdf";
 
 export const MyDoc = (
   <Document>
@@ -20,21 +21,15 @@ export const MyDoc = (
       <Agenda section={0} />
     </Page>
     <Page size="A4" orientation="landscape">
-      {/* Section 1 / Page 3 */}
+      {/* Section 1  */}
       <Agenda section={1} />
     </Page>
     <Page size="A4" orientation="landscape">
       <IntroductionPage />
     </Page>
     <Page size="A4" orientation="landscape">
-      {/* Section 2 / Page @todo */}
+      {/* Section 2  */}
       <Agenda section={2} />
-    </Page>
-    <Page size="A4" orientation="landscape">
-      <BarChartPage />
-    </Page>
-    <Page size="A4" orientation="landscape">
-      <ChartGraphPage />
     </Page>
     <Page size="A4" orientation="landscape">
       <BarGraphsHorizontal />
@@ -50,7 +45,12 @@ export const MyDoc = (
       {/* Section 4 */}
       <Agenda section={4} />
     </Page>
-    <Page size="A4" orientation="landscape"></Page>
+    <Page size="A4" orientation="landscape">
+      <BarChartPage />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      <ChartGraphPage />
+    </Page>
     <Page size="A4" orientation="landscape">
       <FooterPage />
     </Page>
@@ -58,20 +58,25 @@ export const MyDoc = (
 );
 
 const MyPdf = () => {
-  const [showView, setShowView] = useState(false);
+  const [showPdf, setShowPdf] = useState(false);
 
   return (
     <>
       <button
         style={{ marginBottom: "50px" }}
-        onClick={() => setShowView(!showView)}
+        onClick={() => setShowPdf(!showPdf)}
       >
-        {showView ? "Hide PDF" : "Show PDF"}
+        {showPdf ? "Hide PDF" : "Show PDF"}
       </button>
-      {showView ? (
-        <PDFViewer width="1200px" height="900px">
-          {MyDoc}
-        </PDFViewer>
+      {showPdf ? (
+        <>
+          <h1>Download PDF</h1>
+          <DownloadPdf />
+
+          <PDFViewer width="1200px" height="900px">
+            {MyDoc}
+          </PDFViewer>
+        </>
       ) : null}
     </>
   );

@@ -20,7 +20,7 @@ export const BarChartPage = () => {
         style={[
           globalStyles.brandSecondaryColor,
           globalStyles.boldFontSize,
-          { paddingBottom: "15px" },
+          { paddingBottom: "15px", textAlign: "center" },
         ]}
         key={example}
       >
@@ -37,14 +37,13 @@ export const BarChartPage = () => {
     >
       <Image
         src={canvasConverter}
-        style={{ width: "55%", height: "50%", margin: "10% auto" }}
+        style={{ width: "55%", height: "40%", margin: "5% auto" }}
       />
       <View
         style={{
           width: "50%",
           height: "50%",
-          marginLeft: "5%",
-          marginBottom: "5%",
+          margin: "5% auto",
         }}
       >
         {printStatistic}

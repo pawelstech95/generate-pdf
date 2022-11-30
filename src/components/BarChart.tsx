@@ -100,5 +100,7 @@ export const BarChart = () => (
     // @ts-ignore
     options={options}
     type="bar"
+    width={800}
+    height={600}
   />
 );

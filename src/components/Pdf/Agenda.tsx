@@ -61,9 +61,9 @@ const Agenda = ({ section }: Props) => {
         ]}
       >
         {section === 4 ? (
-          <Text style={{ color: "red" }}>4. Tables and advanced charts</Text>
+          <Text style={{ color: "red" }}>4. Other charts</Text>
         ) : (
-          <Text> 4. Tables and advanced charts</Text>
+          <Text>4. Other charts</Text>
         )}
       </Text>
     </View>

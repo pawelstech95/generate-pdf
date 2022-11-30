@@ -74,7 +74,6 @@ export const ChartGraph = () => {
               title: {
                 display: true,
                 text: "Graph with some data",
-                // fontSize: 32 // @todo
               },
               legend: {
                 display: true,

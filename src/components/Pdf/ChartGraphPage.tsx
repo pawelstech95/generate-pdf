@@ -23,11 +23,11 @@ export const ChartGraphPage = () => {
     >
       <Image
         src={canvasFirst}
-        style={{ width: "45%", height: "50%", margin: "10% auto" }}
+        style={{ width: "45%", height: "50%", margin: "0 auto" }}
       />
       <Image
         src={canvasSecond}
-        style={{ width: "45%", height: "50%", margin: "10% auto" }}
+        style={{ width: "45%", height: "50%", margin: "0 auto" }}
       />
     </View>
   );
