@@ -8,6 +8,7 @@ import { BarChartPage } from "./BarChartPage";
 import { BarGraphsHorizontal } from "./BarGraphsHorizontal";
 import { PageWithFonts } from "./PageWithFonts";
 import { FooterPage } from "./FooterPage";
+import { ChartGraphPage } from "./ChartGraphPage";
 
 export const MyDoc = (
   <Document>
@@ -31,6 +32,9 @@ export const MyDoc = (
     </Page>
     <Page size="A4" orientation="landscape">
       <BarChartPage />
+    </Page>
+    <Page size="A4" orientation="landscape">
+      <ChartGraphPage />
     </Page>
     <Page size="A4" orientation="landscape">
       <BarGraphsHorizontal />

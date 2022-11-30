@@ -1,9 +1,8 @@
 import React, { useCallback } from "react";
 import { Image, View, Text } from "@react-pdf/renderer";
+
 import { globalStyles } from "../../utils/stylesForPdfComponents";
 import { data } from "../BarChart";
-
-// @todo this whole component needs a rewrite
 
 export const BarChartPage = () => {
   const canvasConverter = useCallback(() => {
